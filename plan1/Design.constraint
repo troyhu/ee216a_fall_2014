@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Tue Feb  9 02:35:38 2016
+****************************************
+
+
+  Startpoint: type[0] (input port clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[8][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.60       0.60 r
+  type[0] (in)                                            0.00       0.60 r
+  U42837/Y (XOR2X1_RVT)                                   0.03       0.63 f
+  U37544/Y (NAND2X0_RVT)                                  0.02       0.65 r
+  U43221/Y (INVX1_RVT)                                    0.01       0.66 f
+  U37543/Y (AND2X1_RVT)                                   0.02       0.68 f
+  U37406/Y (AND3X1_RVT)                                   0.03       0.70 f
+  U41327/Y (NAND2X0_RVT)                                  0.05       0.75 r
+  U41997/Y (INVX1_RVT)                                    0.03       0.78 f
+  U37392/Y (AO22X1_RVT)                                   0.02       0.80 f
+  buf_powerup_enemy_reg[8][0]/D (DFFNX1_RVT)              0.00       0.80 f
+  data arrival time                                                  0.80
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                      -0.10     166.55
+  buf_powerup_enemy_reg[8][0]/CLK (DFFNX1_RVT)            0.00     166.55 f
+  library setup time                                     -0.02     166.53
+  data required time                                               166.53
+  --------------------------------------------------------------------------
+  data required time                                               166.53
+  data arrival time                                                 -0.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                      165.74
+
+
+  Startpoint: buf_powerup_enemy_reg[16][0]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][0]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][0]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37278/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][0]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][0]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+    Net: n43749
+
+    max_transition         0.05
+  - Transition Time        0.07
+  ------------------------------
+    Slack                 -0.02  (VIOLATED)
+
+    List of pins on net "n43749" with transition violations :
+   -----------------------------------------------------------------
+                             Required        Actual
+                            Transition     Transition       Slack
+   -----------------------------------------------------------------
+       PIN :   num_pwr_emy_reg[0]/QN
+                                0.05           0.07          -0.02  (VIOLATED)
+
+    Net: n43749
+
+    max_capacitance        8.00
+  - Capacitance           16.91
+  ------------------------------
+    Slack                 -8.91  (VIOLATED)
+
+
+    Design: SGDE
+
+    max_area               0.00
+  - Current Area       93885.41
+  ------------------------------
+    Slack              -93885.41  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  FB_A_reg[0]/CLK(high)
+                      0.02         166.65        166.63 (MET)
+
+1

@@ -1,0 +1,360 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'SGDE' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 2
+        -max_paths 10
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Tue Feb  9 02:35:32 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: buf_powerup_enemy_reg[16][0]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][0]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][0]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37278/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][0]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][0]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][1]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][1]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][1]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][1]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37279/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][1]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][1]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][2]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][2]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][2]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][2]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37280/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][2]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][2]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][3]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][3]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][3]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][3]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37281/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][3]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][3]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][4]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][4]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][4]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][4]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37282/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][4]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][4]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][5]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][5]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][5]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][5]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37283/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][5]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][5]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][6]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][6]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][6]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][6]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37284/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][6]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][6]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][7]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][7]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][7]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][7]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37285/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][7]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][7]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][8]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][8]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][8]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][8]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37286/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][8]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][8]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: buf_powerup_enemy_reg[16][9]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_powerup_enemy_reg[16][9]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               70000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  buf_powerup_enemy_reg[16][9]/CLK (DFFNX1_RVT)           0.00 #   166.65 f
+  buf_powerup_enemy_reg[16][9]/Q (DFFNX1_RVT)             0.04     166.69 f
+  U37287/Y (AO22X1_RVT)                                   0.10     166.79 f
+  buf_powerup_enemy_reg[16][9]/D (DFFNX1_RVT)             0.09     166.88 f
+  data arrival time                                                166.88
+
+  clock clk (fall edge)                                 166.65     166.65
+  clock network delay (ideal)                             0.00     166.65
+  clock uncertainty                                       0.10     166.75
+  buf_powerup_enemy_reg[16][9]/CLK (DFFNX1_RVT)           0.00     166.75 f
+  library hold time                                       0.00     166.75
+  data required time                                               166.75
+  --------------------------------------------------------------------------
+  data required time                                               166.75
+  data arrival time                                               -166.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1

@@ -1,0 +1,66 @@
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Tue Feb  9 02:35:38 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+SGDE                   70000             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_1        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_4        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_cmp6_0       ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_7        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_8        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_4        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_sub_11       ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_7        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_13       ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_10       ForQA             saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+SGDE                                      0.986  128.838 1.65e+11 1.65e+05 100.0
+  add_0_root_sub_0_root_sub_577 (SGDE_DW01_add_10)
+                                          0.000    0.000 5.14e+07   51.423   0.0
+  add_0_root_sub_0_root_sub_595 (SGDE_DW01_add_13)
+                                          0.000    0.000 5.14e+07   51.423   0.0
+  add_0_root_sub_0_root_sub_610 (SGDE_DW01_add_7)
+                                       9.36e-07      N/A 5.14e+07   51.429   0.0
+  sub_0_root_r812 (SGDE_DW01_sub_11)   4.08e-03 1.55e-02 8.93e+07   89.349   0.1
+  add_0_root_r819 (SGDE_DW01_add_4)    3.60e-03 1.03e-02 4.30e+07   43.028   0.0
+  r794 (SGDE_DW01_inc_8)               1.75e-03 7.73e-03 1.11e+08  110.973   0.1
+  r795 (SGDE_DW01_inc_7)               1.20e-04      N/A 7.44e+07   74.448   0.0
+  r809 (SGDE_DW01_cmp6_0)              1.48e-03 3.72e-03 1.04e+08  103.576   0.1
+  add_322 (SGDE_DW01_inc_4)            1.86e-03 3.04e-03 7.47e+07   74.694   0.0
+  add_574 (SGDE_DW01_inc_1)            9.49e-07 7.99e-06 1.01e+08  101.281   0.1
+1
