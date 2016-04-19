@@ -1,0 +1,58 @@
+Loading db file '/w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Sat Apr  9 16:47:59 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+SGDE                   8000              saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_0        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_1        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_inc_3        ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_19       ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_18       ForQA             saed32rvt_ff1p16vn40c
+SGDE_DW01_add_5        ForQA             saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+SGDE                                      6.252  977.097 1.17e+10 1.26e+04 100.0
+  add_0_root_sub_0_root_sub_581 (SGDE_DW01_add_5)
+                                       5.52e-03 5.27e-04 6.66e+07   66.640   0.5
+  add_0_root_sub_0_root_add_472_3 (SGDE_DW01_add_18)
+                                       4.10e-02      N/A 6.88e+07   68.726   0.5
+  add_0_root_sub_0_root_add_484_3 (SGDE_DW01_add_19)
+                                       4.06e-02      N/A 7.19e+07   71.679   0.6
+  r733 (SGDE_DW01_inc_3)               5.23e-04 1.24e-03 7.32e+07   73.241   0.6
+  add_531 (SGDE_DW01_inc_1)            7.79e-02    0.189 1.02e+08  101.883   0.8
+  add_588 (SGDE_DW01_inc_0)            5.42e-04 1.79e-03 7.34e+07   73.382   0.6
+1

@@ -1,0 +1,448 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Sat Apr  9 16:47:56 2016
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: count_npc_reg[0]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  count_npc_reg[0]/CLK (DFFNX1_RVT)        0.00       1.50 f
+  count_npc_reg[0]/Q (DFFNX1_RVT)          0.05       1.55 f
+  U3354/Y (AND2X1_RVT)                     0.02       1.57 f
+  U3452/Y (NAND2X0_RVT)                    0.05       1.62 r
+  U3318/Y (OA222X1_RVT)                    0.03       1.65 r
+  U3317/Y (OA221X1_RVT)                    0.02       1.67 r
+  U3314/Y (NAND4X0_RVT)                    0.03       1.70 f
+  U3313/Y (NAND2X0_RVT)                    0.03       1.72 r
+  U3312/Y (OA21X1_RVT)                     0.02       1.74 r
+  U3543/Y (INVX1_RVT)                      0.01       1.75 f
+  U2611/Y (OA222X1_RVT)                    0.02       1.77 f
+  U2610/Y (AND4X1_RVT)                     0.03       1.81 f
+  U2609/Y (NAND4X0_RVT)                    0.02       1.82 r
+  state_reg[0]/D (DFFARX1_RVT)             0.00       1.82 r
+  data arrival time                                   1.82
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  clock uncertainty                       -0.05       2.95
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00       2.95 r
+  library setup time                      -0.02       2.93
+  data required time                                  2.93
+  -----------------------------------------------------------
+  data required time                                  2.93
+  data arrival time                                  -1.82
+  -----------------------------------------------------------
+  slack (MET)                                         1.11
+
+
+  Startpoint: count_npc_reg[1]
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  count_npc_reg[1]/CLK (DFFNX1_RVT)        0.00       1.50 f
+  count_npc_reg[1]/Q (DFFNX1_RVT)          0.05       1.55 f
+  U3358/Y (AND2X1_RVT)                     0.02       1.57 f
+  U3487/Y (NAND2X0_RVT)                    0.05       1.62 r
+  U3316/Y (OA222X1_RVT)                    0.03       1.65 r
+  U3315/Y (OA221X1_RVT)                    0.02       1.67 r
+  U3314/Y (NAND4X0_RVT)                    0.03       1.70 f
+  U3313/Y (NAND2X0_RVT)                    0.03       1.72 r
+  U3312/Y (OA21X1_RVT)                     0.02       1.74 r
+  U3543/Y (INVX1_RVT)                      0.01       1.75 f
+  U2611/Y (OA222X1_RVT)                    0.02       1.77 f
+  U2610/Y (AND4X1_RVT)                     0.03       1.81 f
+  U2609/Y (NAND4X0_RVT)                    0.02       1.82 r
+  state_reg[0]/D (DFFARX1_RVT)             0.00       1.82 r
+  data arrival time                                   1.82
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  clock uncertainty                       -0.05       2.95
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00       2.95 r
+  library setup time                      -0.02       2.93
+  data required time                                  2.93
+  -----------------------------------------------------------
+  data required time                                  2.93
+  data arrival time                                  -1.82
+  -----------------------------------------------------------
+  slack (MET)                                         1.11
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2659/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][0]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][0]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][1]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2660/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][1]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][1]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][2]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2661/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][2]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][2]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][3]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2662/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][3]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][3]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][4]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2663/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][4]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][4]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][5]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2664/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][5]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][5]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][6]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2665/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][6]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][6]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: buf_obj_reg[17][7]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SGDE               8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  state_reg[1]/Q (DFFARX1_RVT)             0.05       0.05 r
+  U3194/Y (AND2X1_RVT)                     0.02       0.07 r
+  U3193/Y (AND2X1_RVT)                     0.02       0.09 r
+  U3191/Y (NAND2X0_RVT)                    0.02       0.11 f
+  U3532/Y (INVX1_RVT)                      0.01       0.11 r
+  U3189/Y (NAND2X0_RVT)                    0.02       0.13 f
+  U3177/Y (NOR2X0_RVT)                     0.03       0.16 r
+  U3171/Y (AND2X1_RVT)                     0.02       0.18 r
+  U3382/Y (NAND3X0_RVT)                    0.06       0.24 f
+  U3417/Y (INVX1_RVT)                      0.04       0.28 r
+  U2666/Y (AO22X1_RVT)                     0.02       0.30 r
+  buf_obj_reg[17][7]/D (DFFNX1_RVT)        0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (fall edge)                    1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  clock uncertainty                       -0.05       1.45
+  buf_obj_reg[17][7]/CLK (DFFNX1_RVT)      0.00       1.45 f
+  library setup time                      -0.01       1.44
+  data required time                                  1.44
+  -----------------------------------------------------------
+  data required time                                  1.44
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.14
+
+
+1

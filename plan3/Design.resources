@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : resources
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Sat Apr  9 16:47:59 2016
+****************************************
+
+Resource Sharing Report for design SGDE in file ./SGDE.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r690     | DW01_inc     | width=6    |               | add_189 add_288      |
+|          |              |            |               | add_311 add_400      |
+| r691     | DW_cmp       | width=6    |               | eq_189_2 eq_288      |
+|          |              |            |               | eq_311               |
+| r694     | DW01_sub     | width=7    |               | sub_219 sub_225      |
+|          |              |            |               | sub_231 sub_237      |
+| r695     | DW_cmp       | width=32   |               | gte_219 gte_225      |
+|          |              |            |               | gte_231 gte_237      |
+| r696     | DW01_cmp6    | width=6    |               | gte_219_2 gte_231_2  |
+|          |              |            |               | lte_225 lte_237      |
+| r700     | DW_cmp       | width=6    |               | gt_419 gt_431        |
+| r701     | DW01_sub     | width=6    |               | sub_421 sub_426      |
+| r702     | DW01_sub     | width=6    |               | sub_422 sub_434      |
+| r703     | DW01_sub     | width=6    |               | sub_427 sub_440      |
+| r705     | DW01_sub     | width=6    |               | sub_433 sub_439      |
+| r706     | DW01_sub     | width=7    |               | sub_463 sub_479      |
+| r716     | DW01_add     | width=9    |               | add_3_root_add_472_3 |
+|          |              |            |               | add_3_root_add_484_3 |
+| r717     | DW01_add     | width=9    |               | add_2_root_add_472_3 |
+|          |              |            |               | add_559              |
+| r723     | DW01_add     | width=9    |               | add_2_root_add_484_3 |
+|          |              |            |               | add_577              |
+| r726     | DW01_inc     | width=6    |               | add_511 add_548      |
+|          |              |            |               | add_571 add_587      |
+| r733     | DW01_inc     | width=9    |               | add_549 add_572      |
+| r766     | DW_cmp       | width=6    |               | gt_211               |
+| r768     | DW_cmp       | width=6    |               | gt_211_2             |
+| r770     | DW_cmp       | width=6    |               | lte_264              |
+| r772     | DW01_inc     | width=5    |               | add_408              |
+| r774     | DW_cmp       | width=6    |               | gt_418               |
+| r776     | DW_cmp       | width=6    |               | lte_430              |
+| r798     | DW01_inc     | width=12   |               | add_531              |
+| r800     | DW01_add     | width=9    |               | add_536              |
+| r814     | DW01_inc     | width=9    |               | add_588              |
+| r1396    | DW_mult_uns  | a_width=1  |               | mult_465_2           |
+|          |              | b_width=8  |               | mult_472_3           |
+|          |              |            |               | mult_479_3           |
+|          |              |            |               | mult_486_2 mult_536  |
+|          |              |            |               | mult_559             |
+| r1978    | DW_mult_uns  | a_width=1  |               | mult_463_3           |
+|          |              | b_width=8  |               | mult_470_2           |
+|          |              |            |               | mult_477_2           |
+|          |              |            |               | mult_484_3           |
+|          |              |            |               | mult_577_2           |
+| r2576    | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_581 |
+| r2578    | DW01_add     | width=6    |               | add_581_2            |
+| r2580    | DW01_add     | width=8    |               | add_0_root_sub_0_root_sub_581 |
+| r2582    | DW01_add     | width=12   |               | add_581_3            |
+| r3171    | DW01_add     | width=9    |               | add_1_root_add_465_2 |
+|          |              |            |               | add_1_root_add_486_2 |
+| r3173    | DW01_add     | width=9    |               | add_0_root_add_465_2 |
+|          |              |            |               | add_0_root_add_486_2 |
+| r3762    | DW01_add     | width=9    |               | add_1_root_add_470_2 |
+|          |              |            |               | add_1_root_add_477_2 |
+| r3764    | DW01_add     | width=9    |               | add_0_root_add_470_2 |
+|          |              |            |               | add_0_root_add_477_2 |
+| r4352    | DW01_sub     | width=8    |               | add_1_root_sub_542   |
+|          |              |            |               | add_1_root_sub_565   |
+| r4354    | DW01_add     | width=8    |               | sub_0_root_sub_542   |
+|          |              |            |               | sub_0_root_sub_565   |
+| r4943    | DW01_add     | width=12   |               | add_542_3 add_565_3  |
+| r4946    | DW01_add     | width=6    |               | add_542_2 add_565_2  |
+| r5540    | DW01_add     | width=9    |               | add_1_root_add_0_root_add_479_2 |
+| r5542    | DW01_sub     | width=9    |               | sub_2_root_add_0_root_add_479_2 |
+| r5544    | DW01_add     | width=9    |               | add_0_root_add_0_root_add_479_2 |
+| r6138    | DW01_add     | width=9    |               | add_1_root_add_0_root_add_463_2 |
+| r6140    | DW01_sub     | width=9    |               | sub_2_root_add_0_root_add_463_2 |
+| r6142    | DW01_add     | width=9    |               | add_0_root_add_0_root_add_463_2 |
+| r6730    | DW01_sub     | width=9    |               | sub_1_root_sub_0_root_add_472_3 |
+| r6732    | DW01_add     | width=9    |               | add_0_root_sub_0_root_add_472_3 |
+| r7320    | DW01_sub     | width=9    |               | sub_1_root_sub_0_root_add_484_3 |
+| r7322    | DW01_add     | width=9    |               | add_0_root_sub_0_root_add_484_3 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_sub_0_root_sub_581         |                    |                |
+|                    | DW01_add         | rpl                |                |
+| add_0_root_sub_0_root_add_472_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| add_0_root_sub_0_root_add_484_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| r733               | DW01_inc         | rpl                |                |
+| add_531            | DW01_inc         | rpl                |                |
+| add_588            | DW01_inc         | rpl                |                |
+===============================================================================
+
+
+No multiplexors to report
+1

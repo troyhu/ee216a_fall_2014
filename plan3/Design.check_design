@@ -1,0 +1,54 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06-SP1
+Date:        Sat Apr  9 16:47:59 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     21
+    Unconnected ports (LINT-28)                                    20
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                               7
+    Connected to power or ground (LINT-32)                          5
+    Nets connected to multiple pins on same cell (LINT-33)          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'SGDE', port 'FB_Q[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', port 'FB_Q[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_19', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_19', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_18', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_18', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_5', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_5', port 'A[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_5', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE_DW01_add_5', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'SGDE', a pin on submodule 'add_0_root_sub_0_root_add_484_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'SGDE', a pin on submodule 'add_0_root_sub_0_root_add_472_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'SGDE', a pin on submodule 'add_0_root_sub_0_root_sub_581' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'SGDE', a pin on submodule 'add_0_root_sub_0_root_sub_581' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[6]' is connected to logic 0. 
+Warning: In design 'SGDE', a pin on submodule 'add_0_root_sub_0_root_sub_581' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'SGDE', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_581'. (LINT-33)
+   Net 'n3499' is connected to pins 'A[7]', 'CI''.
+Warning: In design 'SGDE', the same net is connected to more than one pin on submodule 'add_0_root_sub_0_root_sub_581'. (LINT-33)
+   Net 'n4736' is connected to pins 'B[7]', 'B[6]''.
+Warning: In design 'SGDE', output port 'FB_WEN' is connected directly to 'logic 0'. (LINT-52)
+1
