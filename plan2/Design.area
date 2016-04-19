@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : SGDE
+Version: G-2012.06-SP1
+Date   : Tue Feb  9 16:00:35 2016
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                          118
+Number of nets:                         21566
+Number of cells:                        17276
+Number of combinational cells:          11653
+Number of sequential cells:              5613
+Number of macros:                           0
+Number of buf/inv:                       1334
+Number of references:                      50
+
+Combinational area:       29591.002699
+Buf/Inv area:             2244.599881
+Noncombinational area:    37091.809729
+Net Interconnect area:    27246.085526 
+
+Total cell area:          66682.812428
+Total area:               93928.897954
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+SGDE                              66682.8124    100.0  29126.6816  37091.8097  0.0000  SGDE
+add_0_root_r767                      40.1548      0.1     40.1548      0.0000  0.0000  SGDE_DW01_add_4
+add_0_root_sub_0_root_sub_703        41.4255      0.1     41.4255      0.0000  0.0000  SGDE_DW01_add_10
+add_0_root_sub_0_root_sub_721        41.4255      0.1     41.4255      0.0000  0.0000  SGDE_DW01_add_13
+add_0_root_sub_0_root_sub_736        41.4255      0.1     41.4255      0.0000  0.0000  SGDE_DW01_add_7
+add_367                              28.7183      0.0     28.7183      0.0000  0.0000  SGDE_DW01_inc_4
+add_700                              38.6299      0.1     38.6299      0.0000  0.0000  SGDE_DW01_inc_1
+r742                                112.0775      0.2    112.0775      0.0000  0.0000  SGDE_DW01_cmp6_0
+r745                                 41.9338      0.1     41.9338      0.0000  0.0000  SGDE_DW01_inc_8
+r746                                 28.7183      0.0     28.7183      0.0000  0.0000  SGDE_DW01_inc_7
+sub_0_root_r760                      49.8122      0.1     49.8122      0.0000  0.0000  SGDE_DW01_sub_11
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------
+Total                                                  29591.0027  37091.8097  0.0000
+
+1
