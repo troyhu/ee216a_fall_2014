@@ -1,4 +1,4 @@
-# ucla ee216a project in fall 2014
+# UCLA EE216A project:
 # Sprite Game Display Engine
 
 
